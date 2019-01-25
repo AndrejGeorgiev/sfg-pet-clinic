@@ -2,13 +2,16 @@ package andrej.springframework.sfgpetclinic.service.map;
 
 import andrej.springframework.sfgpetclinic.model.Vet;
 import andrej.springframework.sfgpetclinic.service.CrudService;
+import andrej.springframework.sfgpetclinic.service.VetService;
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
 /**
  * Created by jt on 7/21/18.
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService{
 
     @Override
     public Set<Vet> findAll() {
